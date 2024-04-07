@@ -21,9 +21,10 @@ from Celulares.views import Inicio
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+import include
 
 urlpatterns = [
-    path(' ', Inicio.index, name='indice'),
+    path(' ', include('indice.urls'), name='indice'),
     path('iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
     path('registrarse/', Inicio.registrarse, name="registrarUsuario"),
     path('logout/', Inicio.cerrarSesion, name='cerrarSesion'),
