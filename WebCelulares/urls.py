@@ -20,9 +20,10 @@ from modulo1.views import Practica
 from Celulares.views import Inicio
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('index/', Inicio.index, name='indice'),
+    path(' ', include(), name='indice'),
     path('iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
     path('registrarse/', Inicio.registrarse, name="registrarUsuario"),
     path('logout/', Inicio.cerrarSesion, name='cerrarSesion'),
@@ -38,3 +39,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += staticfiles_urlpatterns()
