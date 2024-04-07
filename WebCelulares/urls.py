@@ -21,7 +21,7 @@ from Celulares.views import Inicio
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-import include
+from django.urls import include
 
 urlpatterns = [
     path(' ', include('indice.urls'), name='indice'),
