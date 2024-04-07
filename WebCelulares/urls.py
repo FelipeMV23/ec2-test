@@ -22,7 +22,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('index/', Inicio.index, name='indice'),
     path('iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
     path('registrarse/', Inicio.registrarse, name="registrarUsuario"),
