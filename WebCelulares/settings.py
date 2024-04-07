@@ -80,11 +80,9 @@ WSGI_APPLICATION = 'WebCelulares.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-   'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'WEB_CELULARES',
-        'USER': 'root',
-        'PASSWORD': '', 
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
