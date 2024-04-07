@@ -1,0 +1,32 @@
+{% load static %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="{% static 'css/Producto.css' %}">
+
+<body>
+    {% include 'Navbar.html' %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1 class="mx-auto">INGRESAR PRODUCTO</h1>
+            <div class="table-responsive">
+                <table class="table table-dark tabla-productos">
+                    {{ form.as_table }}
+                </table>
+            </div>
+            <input class="btn btn-danger w-100 mt-2" type="submit" value="Ingresar producto">
+        </form>
+    </div>
+
+    <br>
+    <br>
+    {% include 'Footer.html' %}
+</body>

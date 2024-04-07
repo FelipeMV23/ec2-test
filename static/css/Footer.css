@@ -1,0 +1,23 @@
+hr{
+    color: #2A2C5D;
+}
+
+footer{
+    background-color: #45b9f8;
+    border-radius: 1rem;
+}
+
+.titulo{
+    color: #2A2C5D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.titulo:hover{
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+.parrafo{
+    color:#2A2C5D;
+}

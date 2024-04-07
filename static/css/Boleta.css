@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    margin-top: auto;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    height: 3.5cm;
+    min-height: 3.5cm;
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    z-index: 999;
+}
+
+.logo_CDN{
+    display: flex;
+    height: 3.2cm;
+    min-height: 3.2cm;
+}
+.logo_SI{
+    margin-top: 19px;
+    display: flex;
+    height: 1.7cm;
+    min-height: 1.7cm;
+}
+
+.navegacion_1 a{
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 3px 20px;
+    border-radius: 6px;
+    background: #098b60;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.navegacion_1 a:hover{
+    background: 0px #07f9a2;
+    color: #0d192b;
+}

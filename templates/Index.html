@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<link rel="stylesheet" href="{% static 'css\Index.css' %}">
+
+<title>SmartPhone +</title>
+</head>
+<body class="cuerpo">
+{% include "Navbar.html" %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <br>
+    <h1 class="titulo-index">Explora nuestros productos destacados</h1>
+    {% include 'carruselTarjetas.html' %}
+    <br>
+    <br>
+    <br>
+    {% include 'footer.html' %}
+</div>
+
+        
+</body>
+</html>

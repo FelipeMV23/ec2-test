@@ -1,0 +1,53 @@
+/* Estilos Generales del Formulario */
+.container form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1.mx-auto {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px; /* Espacio adicional debajo del título */
+    font-size: bold;
+}
+
+/* Estilización de la tabla para formularios */
+.table.tabla-productos {
+    margin: auto; /* Centra la tabla horizontalmente */
+}
+
+.table.tabla-productos th {
+    color: #ffffff; /* Texto blanco para garantizar la legibilidad */
+    padding: 8px; /* Espaciado interno para contenido de celdas */
+    text-align: left; /* Alineación de texto a la izquierda */
+    border-color: #767676;
+}
+
+.table.tabla-productos td {
+    border: 1px solid, 6; /* Borde ligero para celdas */
+    padding: 8px; /* Espaciado interno para contenido de celdas */
+    text-align: left; /* Alineación de texto */
+    border-color: #767676;
+}
+
+.table.tabla-productos th {
+    color: #ffffff; /* Texto blanco para encabezados */
+    border-color: #767676;
+}
+
+/* Estilos para el botón */
+.btn.btn-danger {
+    background-color: #2E58AB; /* Rojo Bootstrap */
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px; /* Espacio adicional arriba del botón */
+    padding: 10px; /* Mayor área de clic */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn.btn-danger:hover {
+    background-color: #45b9f8; /* Rojo oscuro al pasar el mouse */
+    color: #2A2C5D;
+}

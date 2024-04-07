@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\Cards.css' %}">
+    <title>SmartPhone +</title>
+</head>
+<body class="cuerpo">
+    {% include "Navbar.html" %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container py-5">
+        <h1 class="text-white text-center mb-5">Celulares Disponibles</h1>
+        <div class="mx-auto row row-cols-1 row-cols-sm-2 row-cols-md-5 g-4">
+            {% for product in products %}
+                <div class="col d-flex">
+                    <div class="card h-100 text-white" style="background-color: #3eabe635">
+                        {% if product.foto %}
+                            <img src="{{ product.foto.url }}" class="card-img-top" alt="Imagen de {{ product.nombre }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre: {{ product.nombre }}</h5>
+                            <p class="card-text">Marca: {{ product.marca }}</p>
+                            <p class="card-text">Precio: ${{ product.precio }}</p>
+                            <div class="card-body">
+                                <!-- Contenido existente de la tarjeta -->
+                                <div class="card-actions">
+                                    {% if user.is_authenticated and user.is_superuser %}
+                                        <a href="/actualizarProducto/{{ product.id }}" class="btn btn-success btn-sm">Editar</a>
+                                        <a href="/eliminarProducto/{{ product.id }}" class="btn btn-danger btn-sm">Eliminar</a>
+                                    {% endif %}
+                                </div>
+                                {% if user.is_authenticated %}
+                                    <a type="submit" href="{% url 'añadirAlCarrito' product.id %}" onclick="alert('Producto añadido al carrito')" class="button">Añadir al carrito</a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    
+</body>
+</html>
+
+

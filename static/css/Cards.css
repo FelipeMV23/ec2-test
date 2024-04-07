@@ -1,0 +1,51 @@
+.card-img-top {
+    height: 250px; /* Aumentar la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin perder su aspecto */
+    width: 95%; /* Asegura que la imagen cubra el ancho del contenedor */
+    min-width: 200px;
+    background-size: cover;
+
+}
+.card {
+    margin: 0 auto; /* Centrar tarjetas si ocupan menos espacio */
+    max-width: 250px; /* Máximo ancho para tarjetas */
+    background-color: #3eabe635;
+    min-width: 200px;
+}
+
+.card-actions {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-top: 10px; /* Agrega un poco de espacio por encima de los botones */
+}
+
+.btn {
+    margin: 5px; /* Asegura un pequeño espacio entre los botones */
+    font-size: 0.8rem; /* Ajusta el tamaño del texto en los botones si es necesario */
+}
+
+.btn-sm {
+    padding: 5px 10px; /* Ajusta el relleno para que los botones no sean demasiado grandes */
+}
+
+.button{
+    width: 100%;
+    background-color: #45b9f8;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    padding: 12px;
+    color: #2A2C5D;
+    margin: 16px 0;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2.1rem;
+  }
+
+  .button:hover{
+    background-color:#2E58AB;
+    transition: all 0.4s ease-in-out;
+    color: white;
+    font-weight: bold;
+    border-radius: 2.1rem;
+  }

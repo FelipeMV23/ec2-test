@@ -1,0 +1,87 @@
+  body{
+
+    background-color: #2E58AB;
+
+  }
+  
+  .form-register {
+    width: 400px;
+    background-color: #3eabe635; /*Fondo*/
+    padding: 30px;
+    margin: auto;
+    margin-top: 9rem;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color: white; /* Texto Formulario Registro*/
+    /*box-shadow: 7px 13px 37px rgb( 235,60,70); Fondo reluciente*/
+    
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: rgb(120,120,120);
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  
+  .form-register .button {
+    width: 100%;
+    background-color: #45b9f8;
+    transition: all 0.4s ease-in-out;
+    border: none;
+    padding: 12px;
+    color: #2A2C5D;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold
+  }
+
+  .form-register .button:hover{
+
+    background-color:#2E58AB;
+    transition: all 0.4s ease-in-out;
+    color: white;
+    font-weight: bold
+
+  }
+  
+ .foto_home{
+    align-items: center;
+    height: 2cm;
+    min-height: 0.2cm; 
+    border: none; 
+    max-width: none; 
+    max-height: none;
+ }
+
+  @media (max-width: 768px) {
+    .form-register {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
