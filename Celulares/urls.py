@@ -23,8 +23,18 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('Celulares.urls'))
+    path('index/', Inicio.index, name='indice'),
+    path('iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
+    path('registrarse/', Inicio.registrarse, name="registrarUsuario"),
+    path('logout/', Inicio.cerrarSesion, name='cerrarSesion'),
+    path('listarProducto', Inicio.listarProducto, name="listarProducto"),
+    path('eliminarProducto/<int:id>', Inicio.eliminarProducto),
+    path('actualizarProducto/<int:id>', Inicio.actualizarProducto),
+    path('crearProducto/', Inicio.crearProducto, name='crearProducto'),
+    path('añadirAlCarrito/<int:product_id>/', Inicio.añadirAlCarrito, name='añadirAlCarrito'),
+    path('verCarrito/', Inicio.verCarrito, name='verCarrito'),
+    path('limpiarCarrito/', Inicio.limpiarCarrito, name='limpiarCarrito'),
+    path('boleta/', Inicio.comprarProducto, name='boleta')
     ]
 
 if settings.DEBUG:
