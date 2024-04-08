@@ -23,9 +23,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path, include, re_path
 
 urlpatterns = [
-    path('../index/', Inicio.index, name='indice'),
-    path('../iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
-    path('../registrarse/', Inicio.registrarse, name="registrarUsuario"),
+    path('index/', Inicio.index, name='indice'),
+    path('iniciarSesion/', Inicio.iniciarSesion , name="iniciarSesion"),
+    path('registrarse/', Inicio.registrarse, name="registrarUsuario"),
     path('logout/', Inicio.cerrarSesion, name='cerrarSesion'),
     path('listarProducto', Inicio.listarProducto, name="listarProducto"),
     path('eliminarProducto/<int:id>', Inicio.eliminarProducto),
