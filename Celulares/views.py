@@ -16,8 +16,8 @@ from Celulares.forms import FormCelular
 
 class Inicio():
     
-    def index(request):
-        return render(request, 'index.html')
+    def home(request):
+        return render(request, 'home.html')
     
     def registrarse(request):
         if request.method == 'POST':
